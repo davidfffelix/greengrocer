@@ -26,8 +26,16 @@ class SignInScreen extends StatelessWidget {
               ),
               child: const Column(
                 children: [
-                  CustomTextField(),
-                  CustomTextField(),
+                  CustomTextField(
+                    icon: Icons.email,
+                    labelText: 'Email',
+                   ),
+                  CustomTextField(
+                    obscureText: true,
+                    icon: Icons.lock,
+                    // suffixIcon: obscureText,
+                    labelText: 'Senha',
+                  ),
                 ],
               ),
             ),
